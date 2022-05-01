@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <form>
+        <div id="window">
+            <h1> Login </h1>
+            <br>
+            <div class="data">
+                <label for="username">
+                    <br>
+                    <input id="username" type="text" name="" placeholder="username">
+                    <small id="username_error"></small>
+                </label>
+
+                <label for="password">
+                    <br>
+                    <input type="password" id="password" placeholder="password">
+                    <small id="password_error"></small>
+                    <br>
+                    <br>
+                    <br>
+                    <button id="LoginBtn" type="submit" onclick="event.preventDefault(); login_check();"> Login </button>
+                    <br>
+                    <br>
+                    <div style="text-align: right;">
+                        <a href="#"><small> password forgotten? </small></a>
+                    </div>
+                </label>
+            </div>
+        </div>
+    </form>
+
+    <script src="js/validation.js"></script>
+    <script src="https://kit.fontawesome.com/855e229fa7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

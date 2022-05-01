@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Register</title>
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="css/style2.css">
+    </head>
+
+<body>
+
+    <form>
+        <div id="window">
+            <h1> Register </h1>
+            <br>
+            <div class="data">
+                <label for="name">
+                    <br>
+                    <input id="name" type="text" name="name" placeholder="full Name">
+                    <small id="name_error"></small>
+                </label>
+                <label for="username">
+                    <br>
+                    <input id="username" type="text" name="username" placeholder="username">
+                    <small id="username_error"></small>
+                </label>
+                <label for="email">
+                    <br>
+                    <input id="email" type="email" name="name" placeholder="email address">
+                    <small id="email_error"></small>
+                </label>
+                <br>
+
+                <label for="password">
+                    <input id="password" type="password" placeholder="password">
+                    <small id="password_error"></small>
+                    <br>
+                    <input id="cpassword" type="password" placeholder="confirm password">
+                    <small id="cpassword_error"></small>
+                    <br>
+                    <br>
+                    <br>
+                    <button id="LoginBtn" type="submit" onclick="event.preventDefault(); registration_check();"> Register </button>
+                    <br>
+                    <br>
+                    <br>
+                </label>
+            </div>
+        </div>
+    </form>
+
+    <script src="js/validation.js"></script>
+    <script src="https://kit.fontawesome.com/855e229fa7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

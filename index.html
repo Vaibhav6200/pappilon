@@ -1,0 +1,371 @@
+<!-- Develop a project using various web technologies learned in this course. -->
+
+<html>
+<head>
+    <title>Papillon</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script>
+        var ngApp = angular.module("myApp", [])
+        ngApp.controller('myController', function($scope){
+            $scope.heading = "We've been making Healthy food for last 10 years";
+            $scope.body = "We promise you that our Food is best and fresh, Try our chef's special which is finger licking good, Recently we completed our 10 years of this Restraunt, Kindly give us a chance to serve, THANK YOU.";
+        });
+    </script>
+
+</head>
+
+<body ng-app="myApp" ng-controller="myController">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="navbar">
+        <div onclick="Btn1()" class="icon" style="cursor: pointer;">
+            <img src="img/icon.png">
+            <p>pappilon</p>
+        </div>
+        <ul class="navbar-menu">
+            <li class="navbar-item"><a class="navbar-link" href="#" onclick="Btn1()">Home</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#food_types" onclick="Btn1()">Menu</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#about" onclick="Btn1()">About</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#" onclick="Btn2()">Contact</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#" onclick="Btn3()">Checkout</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#" onclick="Btn3()"><i class="fas fa-solid fa-cart-shopping"></i></a></li>
+        </ul>
+        <div class="dropdown">
+            <span><i class="fas fa-solid fa-user"></i> Accounts</span>
+            <div class="dropdown-content">
+                <div>
+                    <a href="login.html"><i class="fa-solid fa-right-to-bracket"></i> Login</a>
+                    <a href="register.html"><i class="fa-solid fa-user-plus"></i> register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+<div id="content1">
+    <!-- SHOWCASE AREA -->
+    <section class="showcase-area" id="showcase">
+        <div class="image-overlay">
+            <div class="showcase-container">
+                <h1 class="main-title">EAT RIGHT FOOD</h1>
+                <p>Eat Healthy Food, It is good for your health.</p>
+                <a href="#food_menu" class="btn btn-primary">Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="about-wrapper container">
+            <div class="about-text">
+                <p class="small">About Us</p>
+                <h2>{{ heading }}</h2>
+                <p>{{ body }}</p>
+
+            </div>
+            <div class="about-img">
+                <img src="./img/building-image.jpg" alt="About Us">
+            </div>
+        </div>
+    </section>
+
+    <!-- TYPES OF FOOD -->
+    <section id="food_types">
+        <div class="food">Types of Foods</div>
+        <div class="container">
+            <div class="card">
+                <div class="card-body">
+                    <img src="img/food1.jpg" class="image" style="width: 100%;">
+                    <div class="image-overlay">
+                        <h1 class="overlay-heading">Fruits</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <img src="img/food2.jpg" class="image" style="width: 100%;">
+                    <div class="image-overlay">
+                        <h1 class="overlay-heading">Vegetables</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <img src="img/food3.jpg" class="image" style="width: 100%;">
+                    <div class="image-overlay">
+                        <h1 class="overlay-heading">Grains</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOD MENU -->
+    <section id="food_menu">
+        <div class="menu">Food Menu</div>
+        <div class="container2">
+            <div class="food-menu-item">
+                <div class="food-image"><img src="img/food-menu1.jpg" alt=""></div>
+                <div class="food-description">
+                    <h2 class="food-title">Italian Salad</h2>
+                    <p>It is a traditional Italian salad that is served as the first course during a meal</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                    <button class="btn">Add-Cart</button>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image"><img src="img/food-menu2.jpg" alt=""></div>
+                <div class="food-description">
+                    <h2 class="food-title">Italian Salad</h2>
+                    <p>It is a traditional Italian salad that is served as the first course during a meal</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                    <button class="btn">Add-Cart</button>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image"><img src="img/food-menu3.jpg" alt=""></div>
+                <div class="food-description">
+                    <h2 class="food-title">Italian Salad</h2>
+                    <p>It is a traditional Italian salad that is served as the first course during a meal</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                    <button class="btn">Add-Cart</button>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image"><img src="img/food-menu4.jpg" alt=""></div>
+                <div class="food-description">
+                    <h2 class="food-title">Italian Salad</h2>
+                    <p>It is a traditional Italian salad that is served as the first course during a meal</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                    <button class="btn">Add-Cart</button>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image"><img src="img/food-menu5.jpg" alt=""></div>
+                <div class="food-description">
+                    <h2 class="food-title">Italian Salad</h2>
+                    <p>It is a traditional Italian salad that is served as the first course during a meal</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                    <button class="btn">Add-Cart</button>
+                </div>
+            </div>
+            <div class="food-menu-item">
+                <div class="food-image"><img src="img/food-menu6.jpg" alt=""></div>
+                <div class="food-description">
+                    <h2 class="food-title">Italian Salad</h2>
+                    <p>It is a traditional Italian salad that is served as the first course during a meal</p>
+                    <p class="food-price">Price: &#8377; 250</p>
+                    <button class="btn">Add-Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS -->
+    <section id="customer_reviews">
+        <div class="container3">
+            <div class="testimonial-title">What Our Customer Say</div>
+            <div class="reviews">
+                <div class="customer">
+                    <div class="ratings">
+                        <i class="fas fa-solid fa-star"></i>
+                        <i class="fas fa-solid fa-star"></i>
+                        <i class="fas fa-solid fa-star"></i>
+                        <i class="fas fa-solid fa-star"></i>
+                        <i class="fas fa-solid fa-star-half"></i>
+                    </div>
+                    <p class="review-text">I had a great time eating delicious food at this restaurant. Food was fresh and nicely presented, Highly recommended.</p>
+
+                    <div class="reviewer-detail">
+                        <img class="review-image" src="img/image.png">
+                        <p class="reviewer-name">Vaibhav Paliwal</p>
+                    </div>
+                </div>
+                <div class="customer">
+                    <div class="ratings">
+                        <i class="fas fa-solid fa-star"></i>
+                        <i class="fas fa-solid fa-star"></i>
+                        <i class="fas fa-solid fa-star"></i>
+                        <i class="fas fa-solid fa-star"></i>
+                        <i class="fas fa-solid fa-star-half"></i>
+                    </div>
+                    <p class="review-text">I had a great time eating delicious food at this restaurant. Food was fresh and nicely presented, Highly recommended.</p>
+
+                    <div class="reviewer-detail">
+                        <img class="review-image" src="img/image.png">
+                        <p class="reviewer-name">Vaibhav Paliwal</p>
+                    </div>
+                </div>
+                <div class="customer">
+                    <div class="ratings">
+                        <i class="fas fa-solid fa-star"></i>
+                        <i class="fas fa-solid fa-star"></i>
+                        <i class="fas fa-solid fa-star"></i>
+                        <i class="fas fa-solid fa-star"></i>
+                        <i class="fas fa-solid fa-star-half"></i>
+                    </div>
+                    <p class="review-text">I had a great time eating delicious food at this restaurant. Food was fresh and nicely presented, Highly recommended.</p>
+
+                    <div class="reviewer-detail">
+                        <img class="review-image" src="img/image.png">
+                        <p class="reviewer-name">Vaibhav Paliwal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div id="content2">
+    <section id="contact">
+        <div class="contact-container container">
+            <div class="contact-image">
+                <img src="img/restraunt.jpg" alt="">
+            </div>
+            <div class="form-container">
+                <h2>Contact Us</h2>
+                <input type="text" name="" id="" placeholder="Name">
+                <input type="email" name="" id="" placeholder="E-mail">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                <a href="#contact" class="btn btn-primary">SUBMIT</a>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div id="content3">
+    <div class="container4">
+        <h2>Checkout</h2>
+        <div class="row">
+            <div class="col-75">
+                <div class="container5">
+                    <form>
+                        <div class="row">
+                            <div class="col-50">
+                                <h3>Billing Address</h3>
+                                <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                                <input type="text" id="fname" name="firstname" placeholder="vaibhav paliwal">
+                                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                                <input type="text" id="email" name="email" placeholder="vaibhav@example.com">
+                                <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                                <input type="text" id="adr" name="address" placeholder="A-1302 Pinecrest">
+                                <label for="city"><i class="fa fa-institution"></i> City</label>
+                                <input type="text" id="city" name="city" placeholder="Ahmedabad">
+
+                                <div class="row">
+                                <div class="col-50">
+                                    <label for="state">State</label>
+                                    <input type="text" id="state" name="state" placeholder="AH">
+                                </div>
+                                <div class="col-50">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="zip" placeholder="32001">
+                                </div>
+                                </div>
+                            </div>
+
+                            <div class="col-50">
+                                <h3>Payment</h3>
+                                <label for="fname">Accepted Cards</label>
+                                <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                                </div>
+                                <label for="cname">Name on Card</label>
+                                <input type="text" id="cname" name="cardname" placeholder="vaibhav paliwal">
+                                <label for="ccnum">Credit card number</label>
+                                <input type="text" id="ccnum" name="cardnumber" placeholder="9999-9999-9999-9999">
+                                <label for="expmonth">Exp Month</label>
+                                <input type="text" id="expmonth" name="expmonth" placeholder="Febuary">
+                                <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Exp Year</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2025">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="999">
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label><input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing</label>
+                        <input type="submit" value="Pay" class="btn">
+                    </form>
+                </div>
+            </div>
+            <div class="col-25">
+                <div class="container5">
+                <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+                <p><a href="#">Product 1</a> <span class="price">$15</span></p>
+                <p><a href="#">Product 2</a> <span class="price">$5</span></p>
+                <p><a href="#">Product 3</a> <span class="price">$8</span></p>
+                <p><a href="#">Product 4</a> <span class="price">$2</span></p>
+                <hr>
+                <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer">
+            <div class="container2">
+                <div class="col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div style="margin-top: 20px;">
+                        <img class="app-logo" src="https://i.ibb.co/KbPTYYQ/play-store.png" alt="">
+                        <img class="app-logo" src="https://i.ibb.co/hVM4X2p/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <img class="logo" src="img/icon.png" alt="">
+                    <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Clothes Accessible to the Many.</p>
+                </div>
+                <div class="col-3">
+                    <h3>Connect With Us</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Linkedin</li>
+                        <li>reddit</li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h3>Useful links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <center>Copyright &copy; 2021 - Papillon</center>
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+    <script src="https://kit.fontawesome.com/855e229fa7.js" crossorigin="anonymous"></script>
+</body>
+
+</html
