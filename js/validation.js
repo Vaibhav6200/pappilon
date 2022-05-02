@@ -6,7 +6,7 @@ function registration_check(){
         username = document.getElementById("username").value
         password = document.getElementById("password").value
         database[username] = password;
-        location.replace('https://vaibhav6200.github.io/pappilon/')
+        location.replace('https://vaibhav6200.github.io/pappilon/login.html')
     }
 }
 
@@ -18,7 +18,7 @@ function login_check(){
         password = document.getElementById("password").value
         console.log("Login Credentials Checking")
         if(username == "vaibhav620" && password == 'Passw0rd!')
-            location.replace('http://192.168.29.168:5501/index.html');
+            location.replace('https://vaibhav6200.github.io/pappilon/');
     }
 }
 
