@@ -6,7 +6,7 @@ function registration_check(){
         username = document.getElementById("username").value
         password = document.getElementById("password").value
         database[username] = password;
-        location.replace('http://192.168.29.168:5501/login.html')
+        location.replace('https://vaibhav6200.github.io/pappilon/')
     }
 }
 
